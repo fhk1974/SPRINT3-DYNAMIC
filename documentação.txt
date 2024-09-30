@@ -1,0 +1,41 @@
+# Documentação do Projeto: Treinamento Médico em Realidade Virtual com Programação Dinâmica
+
+## 1. Introdução
+Este projeto tem como objetivo desenvolver uma solução de programação dinâmica para otimizar o treinamento de médicos 
+em um ambiente de Realidade Virtual (RV). A ideia é permitir que os médicos realizem procedimentos simulados e, ao longo
+do tempo, melhorem suas habilidades, minimizando erros e otimizando as tentativas de simulação.
+
+## 2. Metodologia
+A abordagem principal utilizada neste projeto é a **programação dinâmica**, uma técnica eficiente para resolver problemas
+que envolvem a otimização de subproblemas menores, armazenando os resultados intermediários para evitar a repetição de 
+cálculos.
+
+### Estruturas de Dados Utilizadas
+- **Matriz Bidimensional**: Utilizada para armazenar os resultados de cada passo do procedimento em múltiplas tentativas.
+- **Feedback Detalhado**: Feedback fornecido ao médico com base no desempenho em cada passo do procedimento.
+
+### Lógica da Solução
+A solução baseia-se em uma matriz que armazena os resultados de cada tentativa de simulação do procedimento médico. 
+Além disso, o sistema ajusta a dificuldade com base no desempenho anterior, tornando o treinamento adaptativo.
+
+## 3. Resultados
+A função principal `treinamento_medico_aprimorado` foi implementada para fornecer feedback detalhado sobre cada 
+tentativa de um médico. A cada execução, o sistema avalia se os passos do procedimento foram executados corretamente 
+e otimiza as tentativas subsequentes.
+
+- **Feedback**: A cada passo do procedimento, o médico recebe feedback se a ação foi correta ou incorreta.
+- **Ajuste de Dificuldade**: Se o desempenho for bom (acima de 80% de precisão), a dificuldade é ajustada para "Fácil".
+Caso contrário, o treinamento é classificado como "Difícil".
+
+## 4. Conclusão
+A implementação de programação dinâmica para otimizar o treinamento em RV permite um sistema eficiente de simulação, 
+onde médicos podem praticar seus procedimentos com feedback contínuo e adaptação da dificuldade. 
+
+### Melhorias Futuras
+- **Integração com Sensores RV**: Futuras melhorias poderiam incluir a integração de sensores em RV para capturar dados 
+em tempo real.
+- **Aprimoramento da Dificuldade**: Incluir mais níveis de dificuldade baseados em tempos de resposta e precisão das 
+ações.
+
+## 5. Código e Documentação
+O código completo foi implementado em Python e pode ser encontrado no arquivo `treinamento_medico_rv_aprimorado.py`.
